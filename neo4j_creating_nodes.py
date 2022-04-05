@@ -157,7 +157,7 @@ create_person()
 print()
 create_category()
 print()
-create_post_comment(20)
+create_post_comment(50)
 print()
 
 
