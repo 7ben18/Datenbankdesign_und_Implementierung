@@ -64,8 +64,8 @@ def create_person():
               + "})")
         cnt += 1
 
-post_title = [] # Brauche ich fuer die Beziehung von Kommentar und Post!
-def create_post(number: int):
+post_title = []  # Brauche ich fuer die Beziehung von Kommentar und Post!
+def create_post_comment(number: int):
     cnt = 0
     while cnt <= number:
         random_cat = random.choice(category)
@@ -82,6 +82,19 @@ def create_post(number: int):
               + ", content:" + "\"" + str(random_content) + "\"" + "})")
 
         post_title.append(random_title)
+        cnt += 1
+    cnt = 0
+    while cnt <= number * 4:
+        random_text = random.choices(random_words, k=random.choice(range(25, 100)))
+        random_text = " ".join([str(item) for item in random_text])
+        random_user = random.choice(username)
+        random_title = random.choice(list(range(0,len(post_title))))
+        print("CREATE (com" + str(cnt) + ":Comment{comment_id:" + str(cnt) \
+                + ", username:" + "\"" + str(random_user) + "\"" \
+                + ", post_title:" + "\"" + post_title[int(random_title)] + "\"" \
+                + ", text:" + "\"" + str(random_text) + "\"" \
+                + "})")
+
         cnt += 1
 
 
@@ -142,15 +155,16 @@ realtion_comment_post()
 
 create_person()
 print()
-create_post(1)
-print()
-create_comment()
-print()
 create_category()
+print()
+create_post_comment(20)
+print()
+
+
 print()
 realtion_comment_post()
 print()
-realtion_person_post()
+#realtion_person_post()
 print()
 realtion_category_post()
 print()
