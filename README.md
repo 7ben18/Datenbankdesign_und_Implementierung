@@ -1,1 +1,0 @@
-# Datenbankdesign_und_Implementierung
