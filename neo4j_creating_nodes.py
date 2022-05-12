@@ -5,6 +5,15 @@ lastname = ["Tran", "Torres Gamez", "von Rappard", "Luder", "Zemp"]
 
 category = ["School","Gaming","Lifestyle","Movies","Food"]
 
+comment_text = [
+    "Nice race mate",
+    "Battery is fine",
+    "No michael no no, this is so not right",
+    "Nice drive baby",
+    "You have to leave the space, all the time you have to leave the space",
+    "How were you feeling the car chassis wise and tyres"
+]
+
 comment_text = ["Extra thought out! Leading the way mate.",
                 "Hugely magical camera angle, friend.",
                 "Engaging work you have here.",
@@ -112,6 +121,19 @@ def create_comment():
         cnt += 1
 
 
+def create_sub_comment():
+    cnt = 0
+    while cnt <= len(post_title) - 1:
+        random_text = random.choices(random_words, k=random.choice(range(25, 100)))
+        random_text = " ".join([str(item) for item in random_text])
+        random_user = random.choice(username)
+        print("CREATE (com" + str(cnt) + ":Comment{comment_id:" + str(cnt) \
+              + ", username:" + "\"" + str(random_user) + "\"" \
+              + ", post_title:" + "\"" + post_title[0] + "\"" \
+              + ", text:" + "\"" + str(random_text) + "\"" \
+              + "})")
+        cnt += 1
+
 
 def realtion_person_post():
     cnt = 0
@@ -150,6 +172,16 @@ def realtion_comment_post():
               + " CREATE (com)-[BL:BELONGS_TO]->(po)")
         cnt += 1
 
+def realtion_comment_comment():
+    cnt = 0
+    while cnt <= len(sub_comment_text) - 1:
+        print("MATCH (com1:Comment), (com2:Comment) " + \
+              "WHERE com1.text = " + "\"" + str(comment_text[cnt]) + "\"" \
+              + " AND com2.text = " + "\"" + str(sub_comment_text[cnt]) + "\"" \
+              + " CREATE (com2)-[BL:BELONGS_TO]->(com1)")
+        cnt += 1
+
+
 realtion_comment_post()
 
 
@@ -169,4 +201,6 @@ print()
 realtion_category_post()
 print()
 realtion_person_comment()
+print()
+realtion_comment_comment()
 
