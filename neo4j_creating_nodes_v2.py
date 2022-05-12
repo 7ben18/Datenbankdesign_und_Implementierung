@@ -1,6 +1,5 @@
 import random
 import lipsum
-import json
 import uuid
 
 username = ["7ben18", "Stellarmilk", "Marvinra", "Zestolory", "Luuzemp"]
@@ -76,7 +75,7 @@ def createCategories():
         })
 
 
-def createPosts(num=100):
+def createPosts(num=2):
     for _ in range(num):
         posts.append({
             'id': generateId(),
@@ -85,7 +84,7 @@ def createPosts(num=100):
         })
 
 
-def createComments(num=200):
+def createComments(num=5):
     for _ in range(num):
         comments.append({
             'id': generateId(),
@@ -134,16 +133,18 @@ def createCommentRelations():
 
 
 def printNodes():
-    for node in nodes:
-        print("CREATE (n:{type}{n})".format(type=node['type'], n='{' + (', '.join(list(map(lambda x: "{}: '{}'".format(x[0], x[1]), node['n'].items())))) + '}'))
+    for i, node in enumerate(nodes):
+        print("CREATE (n{i}:{type}{n})".format(i=i ,type=node['type'], n='{' + (', '.join(list(map(lambda x: "{}: '{}'".format(x[0], x[1].replace('\'', ',')), node['n'].items())))) + '}'))
 
 
 def printRelations():
-    for relation in relations:
+    for i, relation in enumerate(relations):
         print(("MATCH (source:{sourceType}), (target:{targetType}) " +
                "WHERE source.id = '{sourceId}' AND target.id = '{targetId}' " +
-               "CREATE (source)-[{relationType}]->(target)").format(
-            **relation))
+               "CREATE (source)-[r{i}:{relationType}]->(target)").format(
+            **relation, i=i))
+        if i < (len(relations) - 1):
+            print("WITH source, COUNT(r{}) AS cnt".format(i))
 
 
 if __name__ == '__main__':
