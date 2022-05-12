@@ -119,7 +119,7 @@ def realtion_person_post():
         print("MATCH (n:Person), (po:Post) " + \
               "WHERE n.username = " + "\"" + str(username[cnt]) + "\"" \
               + "AND po.username = " + "\"" + username[cnt] + "\"" \
-              + "CREATE (n)-[p:post]->(po)")
+              + "CREATE (n)-[C:CREATE]->(po)")
         cnt += 1
 
 def realtion_person_comment():
@@ -128,7 +128,7 @@ def realtion_person_comment():
         print("MATCH (n:Person), (com:Comment) " + \
               "WHERE n.username = " + "\"" + str(username[cnt]) + "\"" \
               + " AND com.username = " + "\"" + username[cnt] + "\"" \
-              + " CREATE (n)-[co:comment]->(com)")
+              + " CREATE (n)-[CR:CREATE]->(com)")
         cnt += 1
 
 def realtion_category_post():
@@ -137,7 +137,7 @@ def realtion_category_post():
         print("MATCH (cat:Catergory), (po:Post) " + \
               "WHERE cat.category = " + "\"" + str(category[cnt]) + "\"" \
               + " AND po.category = " + "\"" + str(category[cnt]) + "\"" \
-              + " CREATE (po)-[t:type]->(cat)")
+              + " CREATE (po)-[T:IS_TYPE_OF]->(cat)")
         cnt += 1
 
 
@@ -147,7 +147,7 @@ def realtion_comment_post():
         print("MATCH (com:Comment), (po:Post) " + \
               "WHERE com.post_title = " + "\"" + str(post_title[cnt]) + "\"" \
               + " AND po.title = " + "\"" + str(post_title[cnt]) + "\"" \
-              + " CREATE (com)-[cm:comenting]->(po)")
+              + " CREATE (com)-[BL:BELONGS_TO]->(po)")
         cnt += 1
 
 realtion_comment_post()
