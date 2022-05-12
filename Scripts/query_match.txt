@@ -1,0 +1,419 @@
+MATCH (source0:Post), (target0:Category) WHERE source0.id = '95d14849-c450-4d97-9741-d7f6d0807216' AND target0.id = '05480e6c-3b69-4a34-87e4-2b36805f44a2' CREATE (source0)-[r0:IS_OF_TYPE]->(target0)
+WITH source0, COUNT(r0) AS cnt
+MATCH (source1:User), (target1:Post) WHERE source1.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target1.id = '95d14849-c450-4d97-9741-d7f6d0807216' CREATE (source1)-[r1:CREATES]->(target1)
+WITH source1, COUNT(r1) AS cnt
+MATCH (source2:Post), (target2:Category) WHERE source2.id = '89cd9a5b-47fe-45e1-96f3-a5c96e2c3274' AND target2.id = 'a602268d-c97a-4da9-aa49-141bbecb6c65' CREATE (source2)-[r2:IS_OF_TYPE]->(target2)
+WITH source2, COUNT(r2) AS cnt
+MATCH (source3:User), (target3:Post) WHERE source3.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target3.id = '89cd9a5b-47fe-45e1-96f3-a5c96e2c3274' CREATE (source3)-[r3:CREATES]->(target3)
+WITH source3, COUNT(r3) AS cnt
+MATCH (source4:Post), (target4:Category) WHERE source4.id = '7d248dde-0763-4a50-88a5-ee80987c78b8' AND target4.id = '05480e6c-3b69-4a34-87e4-2b36805f44a2' CREATE (source4)-[r4:IS_OF_TYPE]->(target4)
+WITH source4, COUNT(r4) AS cnt
+MATCH (source5:User), (target5:Post) WHERE source5.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target5.id = '7d248dde-0763-4a50-88a5-ee80987c78b8' CREATE (source5)-[r5:CREATES]->(target5)
+WITH source5, COUNT(r5) AS cnt
+MATCH (source6:Post), (target6:Category) WHERE source6.id = '99ecab8f-bcfc-4424-8228-5801ee8721c0' AND target6.id = '4a28c652-668d-4fe4-99c6-fb0e6d5743b9' CREATE (source6)-[r6:IS_OF_TYPE]->(target6)
+WITH source6, COUNT(r6) AS cnt
+MATCH (source7:User), (target7:Post) WHERE source7.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target7.id = '99ecab8f-bcfc-4424-8228-5801ee8721c0' CREATE (source7)-[r7:CREATES]->(target7)
+WITH source7, COUNT(r7) AS cnt
+MATCH (source8:Post), (target8:Category) WHERE source8.id = '857e6bd7-4e74-4773-ad42-eee83bc8acc9' AND target8.id = '3bd75250-d63d-4b59-9538-861fa28d9518' CREATE (source8)-[r8:IS_OF_TYPE]->(target8)
+WITH source8, COUNT(r8) AS cnt
+MATCH (source9:User), (target9:Post) WHERE source9.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target9.id = '857e6bd7-4e74-4773-ad42-eee83bc8acc9' CREATE (source9)-[r9:CREATES]->(target9)
+WITH source9, COUNT(r9) AS cnt
+MATCH (source10:Post), (target10:Category) WHERE source10.id = '2270e98d-6bf3-45a6-a325-49db3679715a' AND target10.id = 'ba1af8ee-68bc-4706-b6b2-f52023d5b70c' CREATE (source10)-[r10:IS_OF_TYPE]->(target10)
+WITH source10, COUNT(r10) AS cnt
+MATCH (source11:User), (target11:Post) WHERE source11.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target11.id = '2270e98d-6bf3-45a6-a325-49db3679715a' CREATE (source11)-[r11:CREATES]->(target11)
+WITH source11, COUNT(r11) AS cnt
+MATCH (source12:Post), (target12:Category) WHERE source12.id = '75d5a896-97e6-477f-9b82-766b92c71664' AND target12.id = '4a28c652-668d-4fe4-99c6-fb0e6d5743b9' CREATE (source12)-[r12:IS_OF_TYPE]->(target12)
+WITH source12, COUNT(r12) AS cnt
+MATCH (source13:User), (target13:Post) WHERE source13.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target13.id = '75d5a896-97e6-477f-9b82-766b92c71664' CREATE (source13)-[r13:CREATES]->(target13)
+WITH source13, COUNT(r13) AS cnt
+MATCH (source14:Post), (target14:Category) WHERE source14.id = '1e1b392f-b2ea-4bd1-8e98-e246157da9bd' AND target14.id = 'a602268d-c97a-4da9-aa49-141bbecb6c65' CREATE (source14)-[r14:IS_OF_TYPE]->(target14)
+WITH source14, COUNT(r14) AS cnt
+MATCH (source15:User), (target15:Post) WHERE source15.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target15.id = '1e1b392f-b2ea-4bd1-8e98-e246157da9bd' CREATE (source15)-[r15:CREATES]->(target15)
+WITH source15, COUNT(r15) AS cnt
+MATCH (source16:Post), (target16:Category) WHERE source16.id = '7ea65d16-3b25-45ae-9678-7f30d0bee7df' AND target16.id = '3bd75250-d63d-4b59-9538-861fa28d9518' CREATE (source16)-[r16:IS_OF_TYPE]->(target16)
+WITH source16, COUNT(r16) AS cnt
+MATCH (source17:User), (target17:Post) WHERE source17.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target17.id = '7ea65d16-3b25-45ae-9678-7f30d0bee7df' CREATE (source17)-[r17:CREATES]->(target17)
+WITH source17, COUNT(r17) AS cnt
+MATCH (source18:Post), (target18:Category) WHERE source18.id = 'dd19d478-3631-4028-a32e-e6f1a1c81601' AND target18.id = '3bd75250-d63d-4b59-9538-861fa28d9518' CREATE (source18)-[r18:IS_OF_TYPE]->(target18)
+WITH source18, COUNT(r18) AS cnt
+MATCH (source19:User), (target19:Post) WHERE source19.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target19.id = 'dd19d478-3631-4028-a32e-e6f1a1c81601' CREATE (source19)-[r19:CREATES]->(target19)
+WITH source19, COUNT(r19) AS cnt
+MATCH (source20:Post), (target20:Category) WHERE source20.id = '7cc0e750-13d7-4f6d-96d4-fe266a2cd6bd' AND target20.id = '05480e6c-3b69-4a34-87e4-2b36805f44a2' CREATE (source20)-[r20:IS_OF_TYPE]->(target20)
+WITH source20, COUNT(r20) AS cnt
+MATCH (source21:User), (target21:Post) WHERE source21.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target21.id = '7cc0e750-13d7-4f6d-96d4-fe266a2cd6bd' CREATE (source21)-[r21:CREATES]->(target21)
+WITH source21, COUNT(r21) AS cnt
+MATCH (source22:Post), (target22:Category) WHERE source22.id = 'c120cb76-cf6e-4b5b-8226-50fafd1cd5c7' AND target22.id = 'ba1af8ee-68bc-4706-b6b2-f52023d5b70c' CREATE (source22)-[r22:IS_OF_TYPE]->(target22)
+WITH source22, COUNT(r22) AS cnt
+MATCH (source23:User), (target23:Post) WHERE source23.id = '701dc145-d360-4773-8df5-defff770284a' AND target23.id = 'c120cb76-cf6e-4b5b-8226-50fafd1cd5c7' CREATE (source23)-[r23:CREATES]->(target23)
+WITH source23, COUNT(r23) AS cnt
+MATCH (source24:Post), (target24:Category) WHERE source24.id = 'b9f8666a-0218-41ed-97f2-d910db10d951' AND target24.id = '3bd75250-d63d-4b59-9538-861fa28d9518' CREATE (source24)-[r24:IS_OF_TYPE]->(target24)
+WITH source24, COUNT(r24) AS cnt
+MATCH (source25:User), (target25:Post) WHERE source25.id = '701dc145-d360-4773-8df5-defff770284a' AND target25.id = 'b9f8666a-0218-41ed-97f2-d910db10d951' CREATE (source25)-[r25:CREATES]->(target25)
+WITH source25, COUNT(r25) AS cnt
+MATCH (source26:Post), (target26:Category) WHERE source26.id = '3e1ec0e7-3027-48c7-9b18-d26530b3550b' AND target26.id = '05480e6c-3b69-4a34-87e4-2b36805f44a2' CREATE (source26)-[r26:IS_OF_TYPE]->(target26)
+WITH source26, COUNT(r26) AS cnt
+MATCH (source27:User), (target27:Post) WHERE source27.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target27.id = '3e1ec0e7-3027-48c7-9b18-d26530b3550b' CREATE (source27)-[r27:CREATES]->(target27)
+WITH source27, COUNT(r27) AS cnt
+MATCH (source28:Post), (target28:Category) WHERE source28.id = '2766e8aa-83e0-4694-9ecb-37a2ed0cbbd6' AND target28.id = 'ba1af8ee-68bc-4706-b6b2-f52023d5b70c' CREATE (source28)-[r28:IS_OF_TYPE]->(target28)
+WITH source28, COUNT(r28) AS cnt
+MATCH (source29:User), (target29:Post) WHERE source29.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target29.id = '2766e8aa-83e0-4694-9ecb-37a2ed0cbbd6' CREATE (source29)-[r29:CREATES]->(target29)
+WITH source29, COUNT(r29) AS cnt
+MATCH (source30:Post), (target30:Category) WHERE source30.id = 'f378d479-9841-4a50-aedd-8126bcb1caf9' AND target30.id = 'ba1af8ee-68bc-4706-b6b2-f52023d5b70c' CREATE (source30)-[r30:IS_OF_TYPE]->(target30)
+WITH source30, COUNT(r30) AS cnt
+MATCH (source31:User), (target31:Post) WHERE source31.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target31.id = 'f378d479-9841-4a50-aedd-8126bcb1caf9' CREATE (source31)-[r31:CREATES]->(target31)
+WITH source31, COUNT(r31) AS cnt
+MATCH (source32:Post), (target32:Category) WHERE source32.id = '3efcd7ca-6abd-44c7-b314-27bb3e266898' AND target32.id = '05480e6c-3b69-4a34-87e4-2b36805f44a2' CREATE (source32)-[r32:IS_OF_TYPE]->(target32)
+WITH source32, COUNT(r32) AS cnt
+MATCH (source33:User), (target33:Post) WHERE source33.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target33.id = '3efcd7ca-6abd-44c7-b314-27bb3e266898' CREATE (source33)-[r33:CREATES]->(target33)
+WITH source33, COUNT(r33) AS cnt
+MATCH (source34:Post), (target34:Category) WHERE source34.id = '2859aa91-0990-450a-979f-c96d76f17dfd' AND target34.id = 'a602268d-c97a-4da9-aa49-141bbecb6c65' CREATE (source34)-[r34:IS_OF_TYPE]->(target34)
+WITH source34, COUNT(r34) AS cnt
+MATCH (source35:User), (target35:Post) WHERE source35.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target35.id = '2859aa91-0990-450a-979f-c96d76f17dfd' CREATE (source35)-[r35:CREATES]->(target35)
+WITH source35, COUNT(r35) AS cnt
+MATCH (source36:Post), (target36:Category) WHERE source36.id = '3e4bd6ca-3782-49ca-8c1c-eff9f2cd08b4' AND target36.id = 'ba1af8ee-68bc-4706-b6b2-f52023d5b70c' CREATE (source36)-[r36:IS_OF_TYPE]->(target36)
+WITH source36, COUNT(r36) AS cnt
+MATCH (source37:User), (target37:Post) WHERE source37.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target37.id = '3e4bd6ca-3782-49ca-8c1c-eff9f2cd08b4' CREATE (source37)-[r37:CREATES]->(target37)
+WITH source37, COUNT(r37) AS cnt
+MATCH (source38:Post), (target38:Category) WHERE source38.id = '1fb78f28-b885-43f8-a600-ac499dde67cd' AND target38.id = 'a602268d-c97a-4da9-aa49-141bbecb6c65' CREATE (source38)-[r38:IS_OF_TYPE]->(target38)
+WITH source38, COUNT(r38) AS cnt
+MATCH (source39:User), (target39:Post) WHERE source39.id = '701dc145-d360-4773-8df5-defff770284a' AND target39.id = '1fb78f28-b885-43f8-a600-ac499dde67cd' CREATE (source39)-[r39:CREATES]->(target39)
+WITH source39, COUNT(r39) AS cnt
+MATCH (source40:Post), (target40:Category) WHERE source40.id = '371aff39-8b95-4b83-955b-48da2a158bb5' AND target40.id = '05480e6c-3b69-4a34-87e4-2b36805f44a2' CREATE (source40)-[r40:IS_OF_TYPE]->(target40)
+WITH source40, COUNT(r40) AS cnt
+MATCH (source41:User), (target41:Post) WHERE source41.id = '701dc145-d360-4773-8df5-defff770284a' AND target41.id = '371aff39-8b95-4b83-955b-48da2a158bb5' CREATE (source41)-[r41:CREATES]->(target41)
+WITH source41, COUNT(r41) AS cnt
+MATCH (source42:Post), (target42:Category) WHERE source42.id = '8519ad9c-766a-4a8a-94d2-6ff5c0a9eeee' AND target42.id = '05480e6c-3b69-4a34-87e4-2b36805f44a2' CREATE (source42)-[r42:IS_OF_TYPE]->(target42)
+WITH source42, COUNT(r42) AS cnt
+MATCH (source43:User), (target43:Post) WHERE source43.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target43.id = '8519ad9c-766a-4a8a-94d2-6ff5c0a9eeee' CREATE (source43)-[r43:CREATES]->(target43)
+WITH source43, COUNT(r43) AS cnt
+MATCH (source44:Post), (target44:Category) WHERE source44.id = 'b38fcd60-52d7-4de3-984e-696ff52db54b' AND target44.id = 'ba1af8ee-68bc-4706-b6b2-f52023d5b70c' CREATE (source44)-[r44:IS_OF_TYPE]->(target44)
+WITH source44, COUNT(r44) AS cnt
+MATCH (source45:User), (target45:Post) WHERE source45.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target45.id = 'b38fcd60-52d7-4de3-984e-696ff52db54b' CREATE (source45)-[r45:CREATES]->(target45)
+WITH source45, COUNT(r45) AS cnt
+MATCH (source46:Post), (target46:Category) WHERE source46.id = '01f136a0-a045-473e-866b-37b511d9cf87' AND target46.id = '4a28c652-668d-4fe4-99c6-fb0e6d5743b9' CREATE (source46)-[r46:IS_OF_TYPE]->(target46)
+WITH source46, COUNT(r46) AS cnt
+MATCH (source47:User), (target47:Post) WHERE source47.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target47.id = '01f136a0-a045-473e-866b-37b511d9cf87' CREATE (source47)-[r47:CREATES]->(target47)
+WITH source47, COUNT(r47) AS cnt
+MATCH (source48:Post), (target48:Category) WHERE source48.id = 'b472d723-8848-4ca8-864d-7a7b9e4dd928' AND target48.id = '05480e6c-3b69-4a34-87e4-2b36805f44a2' CREATE (source48)-[r48:IS_OF_TYPE]->(target48)
+WITH source48, COUNT(r48) AS cnt
+MATCH (source49:User), (target49:Post) WHERE source49.id = '701dc145-d360-4773-8df5-defff770284a' AND target49.id = 'b472d723-8848-4ca8-864d-7a7b9e4dd928' CREATE (source49)-[r49:CREATES]->(target49)
+WITH source49, COUNT(r49) AS cnt
+MATCH (source50:Comment), (target50:Post) WHERE source50.id = '5309b44a-88df-4604-9e0d-ad1a5b94ed2b' AND target50.id = '99ecab8f-bcfc-4424-8228-5801ee8721c0' CREATE (source50)-[r50:BELONGS_TO]->(target50)
+WITH source50, COUNT(r50) AS cnt
+MATCH (source51:User), (target51:Comment) WHERE source51.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target51.id = '5309b44a-88df-4604-9e0d-ad1a5b94ed2b' CREATE (source51)-[r51:CREATES]->(target51)
+WITH source51, COUNT(r51) AS cnt
+MATCH (source52:Comment), (target52:Comment) WHERE source52.id = 'd208612f-f6e9-478c-bc87-c3d86b2c5838' AND target52.id = 'b2425618-a029-417f-8861-17c43afb7e6a' CREATE (source52)-[r52:BELONGS_TO]->(target52)
+WITH source52, COUNT(r52) AS cnt
+MATCH (source53:User), (target53:Comment) WHERE source53.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target53.id = 'd208612f-f6e9-478c-bc87-c3d86b2c5838' CREATE (source53)-[r53:CREATES]->(target53)
+WITH source53, COUNT(r53) AS cnt
+MATCH (source54:Comment), (target54:Post) WHERE source54.id = '18957e1f-86e9-4e8b-bc24-7859dc805688' AND target54.id = 'f378d479-9841-4a50-aedd-8126bcb1caf9' CREATE (source54)-[r54:BELONGS_TO]->(target54)
+WITH source54, COUNT(r54) AS cnt
+MATCH (source55:User), (target55:Comment) WHERE source55.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target55.id = '18957e1f-86e9-4e8b-bc24-7859dc805688' CREATE (source55)-[r55:CREATES]->(target55)
+WITH source55, COUNT(r55) AS cnt
+MATCH (source56:Comment), (target56:Comment) WHERE source56.id = '07f15957-e224-4ea2-865f-2f97a199da06' AND target56.id = '92ee641e-624b-4e78-b984-9b7f355ac2ea' CREATE (source56)-[r56:BELONGS_TO]->(target56)
+WITH source56, COUNT(r56) AS cnt
+MATCH (source57:User), (target57:Comment) WHERE source57.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target57.id = '07f15957-e224-4ea2-865f-2f97a199da06' CREATE (source57)-[r57:CREATES]->(target57)
+WITH source57, COUNT(r57) AS cnt
+MATCH (source58:Comment), (target58:Post) WHERE source58.id = '5b10fbb3-3ffa-4fc3-8966-3df5d69e0c02' AND target58.id = '99ecab8f-bcfc-4424-8228-5801ee8721c0' CREATE (source58)-[r58:BELONGS_TO]->(target58)
+WITH source58, COUNT(r58) AS cnt
+MATCH (source59:User), (target59:Comment) WHERE source59.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target59.id = '5b10fbb3-3ffa-4fc3-8966-3df5d69e0c02' CREATE (source59)-[r59:CREATES]->(target59)
+WITH source59, COUNT(r59) AS cnt
+MATCH (source60:Comment), (target60:Comment) WHERE source60.id = '43b4fb1f-0ece-4b4f-95d3-5ddf8a3ffe50' AND target60.id = '1f65e5a4-20b0-42c0-935c-e35e1c153559' CREATE (source60)-[r60:BELONGS_TO]->(target60)
+WITH source60, COUNT(r60) AS cnt
+MATCH (source61:User), (target61:Comment) WHERE source61.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target61.id = '43b4fb1f-0ece-4b4f-95d3-5ddf8a3ffe50' CREATE (source61)-[r61:CREATES]->(target61)
+WITH source61, COUNT(r61) AS cnt
+MATCH (source62:Comment), (target62:Post) WHERE source62.id = 'e410000a-13de-4537-9bb5-d6d1fe42e037' AND target62.id = '857e6bd7-4e74-4773-ad42-eee83bc8acc9' CREATE (source62)-[r62:BELONGS_TO]->(target62)
+WITH source62, COUNT(r62) AS cnt
+MATCH (source63:User), (target63:Comment) WHERE source63.id = '701dc145-d360-4773-8df5-defff770284a' AND target63.id = 'e410000a-13de-4537-9bb5-d6d1fe42e037' CREATE (source63)-[r63:CREATES]->(target63)
+WITH source63, COUNT(r63) AS cnt
+MATCH (source64:Comment), (target64:Comment) WHERE source64.id = 'bef2dd5d-0d7b-40db-b07a-d0ebdf63e52e' AND target64.id = '2a4c6f6c-52e9-40bb-a241-43f575f66c3a' CREATE (source64)-[r64:BELONGS_TO]->(target64)
+WITH source64, COUNT(r64) AS cnt
+MATCH (source65:User), (target65:Comment) WHERE source65.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target65.id = 'bef2dd5d-0d7b-40db-b07a-d0ebdf63e52e' CREATE (source65)-[r65:CREATES]->(target65)
+WITH source65, COUNT(r65) AS cnt
+MATCH (source66:Comment), (target66:Post) WHERE source66.id = '4df5844f-7ac3-40aa-8eab-c8a198396f34' AND target66.id = 'f378d479-9841-4a50-aedd-8126bcb1caf9' CREATE (source66)-[r66:BELONGS_TO]->(target66)
+WITH source66, COUNT(r66) AS cnt
+MATCH (source67:User), (target67:Comment) WHERE source67.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target67.id = '4df5844f-7ac3-40aa-8eab-c8a198396f34' CREATE (source67)-[r67:CREATES]->(target67)
+WITH source67, COUNT(r67) AS cnt
+MATCH (source68:Comment), (target68:Comment) WHERE source68.id = 'c0878958-d80e-432c-ae87-b47b00b72709' AND target68.id = '8a29bdf9-f8b9-4dfc-b9cc-3f90f75d2082' CREATE (source68)-[r68:BELONGS_TO]->(target68)
+WITH source68, COUNT(r68) AS cnt
+MATCH (source69:User), (target69:Comment) WHERE source69.id = '701dc145-d360-4773-8df5-defff770284a' AND target69.id = 'c0878958-d80e-432c-ae87-b47b00b72709' CREATE (source69)-[r69:CREATES]->(target69)
+WITH source69, COUNT(r69) AS cnt
+MATCH (source70:Comment), (target70:Post) WHERE source70.id = '8b36df9b-67ff-4d1b-92a6-37b34a813782' AND target70.id = '01f136a0-a045-473e-866b-37b511d9cf87' CREATE (source70)-[r70:BELONGS_TO]->(target70)
+WITH source70, COUNT(r70) AS cnt
+MATCH (source71:User), (target71:Comment) WHERE source71.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target71.id = '8b36df9b-67ff-4d1b-92a6-37b34a813782' CREATE (source71)-[r71:CREATES]->(target71)
+WITH source71, COUNT(r71) AS cnt
+MATCH (source72:Comment), (target72:Comment) WHERE source72.id = '3e844ef0-cc1f-4ad8-9db4-f2f9f6faa75b' AND target72.id = '21b196e3-e6ad-4481-9d51-ab08e4b4d58c' CREATE (source72)-[r72:BELONGS_TO]->(target72)
+WITH source72, COUNT(r72) AS cnt
+MATCH (source73:User), (target73:Comment) WHERE source73.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target73.id = '3e844ef0-cc1f-4ad8-9db4-f2f9f6faa75b' CREATE (source73)-[r73:CREATES]->(target73)
+WITH source73, COUNT(r73) AS cnt
+MATCH (source74:Comment), (target74:Post) WHERE source74.id = '92ee641e-624b-4e78-b984-9b7f355ac2ea' AND target74.id = '2859aa91-0990-450a-979f-c96d76f17dfd' CREATE (source74)-[r74:BELONGS_TO]->(target74)
+WITH source74, COUNT(r74) AS cnt
+MATCH (source75:User), (target75:Comment) WHERE source75.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target75.id = '92ee641e-624b-4e78-b984-9b7f355ac2ea' CREATE (source75)-[r75:CREATES]->(target75)
+WITH source75, COUNT(r75) AS cnt
+MATCH (source76:Comment), (target76:Comment) WHERE source76.id = '060b096b-3bde-4a4b-b08b-9b6e086d7677' AND target76.id = '4db912bb-1bba-406d-a3e7-22a543f05a74' CREATE (source76)-[r76:BELONGS_TO]->(target76)
+WITH source76, COUNT(r76) AS cnt
+MATCH (source77:User), (target77:Comment) WHERE source77.id = '701dc145-d360-4773-8df5-defff770284a' AND target77.id = '060b096b-3bde-4a4b-b08b-9b6e086d7677' CREATE (source77)-[r77:CREATES]->(target77)
+WITH source77, COUNT(r77) AS cnt
+MATCH (source78:Comment), (target78:Post) WHERE source78.id = '6d43f00b-bb63-45f4-bf6e-efd20681ce1f' AND target78.id = '3e1ec0e7-3027-48c7-9b18-d26530b3550b' CREATE (source78)-[r78:BELONGS_TO]->(target78)
+WITH source78, COUNT(r78) AS cnt
+MATCH (source79:User), (target79:Comment) WHERE source79.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target79.id = '6d43f00b-bb63-45f4-bf6e-efd20681ce1f' CREATE (source79)-[r79:CREATES]->(target79)
+WITH source79, COUNT(r79) AS cnt
+MATCH (source80:Comment), (target80:Comment) WHERE source80.id = '2738b71e-96fc-494b-8bf7-c274db382d3b' AND target80.id = '0e5687b6-83e6-4019-b6f0-34042645627e' CREATE (source80)-[r80:BELONGS_TO]->(target80)
+WITH source80, COUNT(r80) AS cnt
+MATCH (source81:User), (target81:Comment) WHERE source81.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target81.id = '2738b71e-96fc-494b-8bf7-c274db382d3b' CREATE (source81)-[r81:CREATES]->(target81)
+WITH source81, COUNT(r81) AS cnt
+MATCH (source82:Comment), (target82:Post) WHERE source82.id = '0d1044f6-5a4e-44a0-bbb9-1cd6ab335f4a' AND target82.id = 'f378d479-9841-4a50-aedd-8126bcb1caf9' CREATE (source82)-[r82:BELONGS_TO]->(target82)
+WITH source82, COUNT(r82) AS cnt
+MATCH (source83:User), (target83:Comment) WHERE source83.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target83.id = '0d1044f6-5a4e-44a0-bbb9-1cd6ab335f4a' CREATE (source83)-[r83:CREATES]->(target83)
+WITH source83, COUNT(r83) AS cnt
+MATCH (source84:Comment), (target84:Comment) WHERE source84.id = '8a29bdf9-f8b9-4dfc-b9cc-3f90f75d2082' AND target84.id = 'b2425618-a029-417f-8861-17c43afb7e6a' CREATE (source84)-[r84:BELONGS_TO]->(target84)
+WITH source84, COUNT(r84) AS cnt
+MATCH (source85:User), (target85:Comment) WHERE source85.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target85.id = '8a29bdf9-f8b9-4dfc-b9cc-3f90f75d2082' CREATE (source85)-[r85:CREATES]->(target85)
+WITH source85, COUNT(r85) AS cnt
+MATCH (source86:Comment), (target86:Post) WHERE source86.id = '02ce3a96-39c9-4080-a0d1-7e30bea3ea4c' AND target86.id = '2270e98d-6bf3-45a6-a325-49db3679715a' CREATE (source86)-[r86:BELONGS_TO]->(target86)
+WITH source86, COUNT(r86) AS cnt
+MATCH (source87:User), (target87:Comment) WHERE source87.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target87.id = '02ce3a96-39c9-4080-a0d1-7e30bea3ea4c' CREATE (source87)-[r87:CREATES]->(target87)
+WITH source87, COUNT(r87) AS cnt
+MATCH (source88:Comment), (target88:Comment) WHERE source88.id = '65a4fb3f-787a-4a51-b874-1fa94389dd5e' AND target88.id = '47f9c2a9-36f2-475b-8df2-2ba67500c59e' CREATE (source88)-[r88:BELONGS_TO]->(target88)
+WITH source88, COUNT(r88) AS cnt
+MATCH (source89:User), (target89:Comment) WHERE source89.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target89.id = '65a4fb3f-787a-4a51-b874-1fa94389dd5e' CREATE (source89)-[r89:CREATES]->(target89)
+WITH source89, COUNT(r89) AS cnt
+MATCH (source90:Comment), (target90:Post) WHERE source90.id = 'a2316ff2-c2bc-49b6-815c-29d2519d4c08' AND target90.id = 'dd19d478-3631-4028-a32e-e6f1a1c81601' CREATE (source90)-[r90:BELONGS_TO]->(target90)
+WITH source90, COUNT(r90) AS cnt
+MATCH (source91:User), (target91:Comment) WHERE source91.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target91.id = 'a2316ff2-c2bc-49b6-815c-29d2519d4c08' CREATE (source91)-[r91:CREATES]->(target91)
+WITH source91, COUNT(r91) AS cnt
+MATCH (source92:Comment), (target92:Comment) WHERE source92.id = 'ec737616-990a-42c0-be52-e7a6c17e5453' AND target92.id = '51315ce5-7ece-4257-b4e4-9f604addcf58' CREATE (source92)-[r92:BELONGS_TO]->(target92)
+WITH source92, COUNT(r92) AS cnt
+MATCH (source93:User), (target93:Comment) WHERE source93.id = '701dc145-d360-4773-8df5-defff770284a' AND target93.id = 'ec737616-990a-42c0-be52-e7a6c17e5453' CREATE (source93)-[r93:CREATES]->(target93)
+WITH source93, COUNT(r93) AS cnt
+MATCH (source94:Comment), (target94:Post) WHERE source94.id = 'ccfee41c-e4be-4326-bccd-c041ea589702' AND target94.id = '1e1b392f-b2ea-4bd1-8e98-e246157da9bd' CREATE (source94)-[r94:BELONGS_TO]->(target94)
+WITH source94, COUNT(r94) AS cnt
+MATCH (source95:User), (target95:Comment) WHERE source95.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target95.id = 'ccfee41c-e4be-4326-bccd-c041ea589702' CREATE (source95)-[r95:CREATES]->(target95)
+WITH source95, COUNT(r95) AS cnt
+MATCH (source96:Comment), (target96:Comment) WHERE source96.id = '106d6458-e2e2-4bd4-99fc-2bcd2ee5f411' AND target96.id = '0d1044f6-5a4e-44a0-bbb9-1cd6ab335f4a' CREATE (source96)-[r96:BELONGS_TO]->(target96)
+WITH source96, COUNT(r96) AS cnt
+MATCH (source97:User), (target97:Comment) WHERE source97.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target97.id = '106d6458-e2e2-4bd4-99fc-2bcd2ee5f411' CREATE (source97)-[r97:CREATES]->(target97)
+WITH source97, COUNT(r97) AS cnt
+MATCH (source98:Comment), (target98:Post) WHERE source98.id = '0b44dae4-9a62-4a08-b1af-f8a0e3eea325' AND target98.id = '3e4bd6ca-3782-49ca-8c1c-eff9f2cd08b4' CREATE (source98)-[r98:BELONGS_TO]->(target98)
+WITH source98, COUNT(r98) AS cnt
+MATCH (source99:User), (target99:Comment) WHERE source99.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target99.id = '0b44dae4-9a62-4a08-b1af-f8a0e3eea325' CREATE (source99)-[r99:CREATES]->(target99)
+WITH source99, COUNT(r99) AS cnt
+MATCH (source100:Comment), (target100:Comment) WHERE source100.id = '51315ce5-7ece-4257-b4e4-9f604addcf58' AND target100.id = '0d1044f6-5a4e-44a0-bbb9-1cd6ab335f4a' CREATE (source100)-[r100:BELONGS_TO]->(target100)
+WITH source100, COUNT(r100) AS cnt
+MATCH (source101:User), (target101:Comment) WHERE source101.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target101.id = '51315ce5-7ece-4257-b4e4-9f604addcf58' CREATE (source101)-[r101:CREATES]->(target101)
+WITH source101, COUNT(r101) AS cnt
+MATCH (source102:Comment), (target102:Post) WHERE source102.id = '193d8ba3-bc34-4f65-a801-1420fe48d25e' AND target102.id = '3e4bd6ca-3782-49ca-8c1c-eff9f2cd08b4' CREATE (source102)-[r102:BELONGS_TO]->(target102)
+WITH source102, COUNT(r102) AS cnt
+MATCH (source103:User), (target103:Comment) WHERE source103.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target103.id = '193d8ba3-bc34-4f65-a801-1420fe48d25e' CREATE (source103)-[r103:CREATES]->(target103)
+WITH source103, COUNT(r103) AS cnt
+MATCH (source104:Comment), (target104:Comment) WHERE source104.id = '57270039-d117-4117-a4a0-7525db593a74' AND target104.id = '03f9b1ab-9a1b-414a-b43c-46311afd53f3' CREATE (source104)-[r104:BELONGS_TO]->(target104)
+WITH source104, COUNT(r104) AS cnt
+MATCH (source105:User), (target105:Comment) WHERE source105.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target105.id = '57270039-d117-4117-a4a0-7525db593a74' CREATE (source105)-[r105:CREATES]->(target105)
+WITH source105, COUNT(r105) AS cnt
+MATCH (source106:Comment), (target106:Post) WHERE source106.id = '75fa6c12-a052-43e6-9a46-cb8f8d7c94ab' AND target106.id = '75d5a896-97e6-477f-9b82-766b92c71664' CREATE (source106)-[r106:BELONGS_TO]->(target106)
+WITH source106, COUNT(r106) AS cnt
+MATCH (source107:User), (target107:Comment) WHERE source107.id = '701dc145-d360-4773-8df5-defff770284a' AND target107.id = '75fa6c12-a052-43e6-9a46-cb8f8d7c94ab' CREATE (source107)-[r107:CREATES]->(target107)
+WITH source107, COUNT(r107) AS cnt
+MATCH (source108:Comment), (target108:Comment) WHERE source108.id = '03f9b1ab-9a1b-414a-b43c-46311afd53f3' AND target108.id = '1a82f781-f60f-4411-80c4-0c39a9d77634' CREATE (source108)-[r108:BELONGS_TO]->(target108)
+WITH source108, COUNT(r108) AS cnt
+MATCH (source109:User), (target109:Comment) WHERE source109.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target109.id = '03f9b1ab-9a1b-414a-b43c-46311afd53f3' CREATE (source109)-[r109:CREATES]->(target109)
+WITH source109, COUNT(r109) AS cnt
+MATCH (source110:Comment), (target110:Post) WHERE source110.id = '1a82f781-f60f-4411-80c4-0c39a9d77634' AND target110.id = '371aff39-8b95-4b83-955b-48da2a158bb5' CREATE (source110)-[r110:BELONGS_TO]->(target110)
+WITH source110, COUNT(r110) AS cnt
+MATCH (source111:User), (target111:Comment) WHERE source111.id = '701dc145-d360-4773-8df5-defff770284a' AND target111.id = '1a82f781-f60f-4411-80c4-0c39a9d77634' CREATE (source111)-[r111:CREATES]->(target111)
+WITH source111, COUNT(r111) AS cnt
+MATCH (source112:Comment), (target112:Comment) WHERE source112.id = '1f65e5a4-20b0-42c0-935c-e35e1c153559' AND target112.id = '02ce3a96-39c9-4080-a0d1-7e30bea3ea4c' CREATE (source112)-[r112:BELONGS_TO]->(target112)
+WITH source112, COUNT(r112) AS cnt
+MATCH (source113:User), (target113:Comment) WHERE source113.id = '701dc145-d360-4773-8df5-defff770284a' AND target113.id = '1f65e5a4-20b0-42c0-935c-e35e1c153559' CREATE (source113)-[r113:CREATES]->(target113)
+WITH source113, COUNT(r113) AS cnt
+MATCH (source114:Comment), (target114:Post) WHERE source114.id = 'a1f1ec33-4ee4-48ad-a89b-c1296b5b4ef8' AND target114.id = 'b38fcd60-52d7-4de3-984e-696ff52db54b' CREATE (source114)-[r114:BELONGS_TO]->(target114)
+WITH source114, COUNT(r114) AS cnt
+MATCH (source115:User), (target115:Comment) WHERE source115.id = '701dc145-d360-4773-8df5-defff770284a' AND target115.id = 'a1f1ec33-4ee4-48ad-a89b-c1296b5b4ef8' CREATE (source115)-[r115:CREATES]->(target115)
+WITH source115, COUNT(r115) AS cnt
+MATCH (source116:Comment), (target116:Comment) WHERE source116.id = '4af2d45a-7004-4c79-b48f-6af23d576108' AND target116.id = 'c0878958-d80e-432c-ae87-b47b00b72709' CREATE (source116)-[r116:BELONGS_TO]->(target116)
+WITH source116, COUNT(r116) AS cnt
+MATCH (source117:User), (target117:Comment) WHERE source117.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target117.id = '4af2d45a-7004-4c79-b48f-6af23d576108' CREATE (source117)-[r117:CREATES]->(target117)
+WITH source117, COUNT(r117) AS cnt
+MATCH (source118:Comment), (target118:Post) WHERE source118.id = 'dc4e900b-5430-4bec-bee2-c9bcc912020b' AND target118.id = '2270e98d-6bf3-45a6-a325-49db3679715a' CREATE (source118)-[r118:BELONGS_TO]->(target118)
+WITH source118, COUNT(r118) AS cnt
+MATCH (source119:User), (target119:Comment) WHERE source119.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target119.id = 'dc4e900b-5430-4bec-bee2-c9bcc912020b' CREATE (source119)-[r119:CREATES]->(target119)
+WITH source119, COUNT(r119) AS cnt
+MATCH (source120:Comment), (target120:Comment) WHERE source120.id = 'bbd33fde-9aff-412e-85ac-6a63116dae63' AND target120.id = '21b196e3-e6ad-4481-9d51-ab08e4b4d58c' CREATE (source120)-[r120:BELONGS_TO]->(target120)
+WITH source120, COUNT(r120) AS cnt
+MATCH (source121:User), (target121:Comment) WHERE source121.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target121.id = 'bbd33fde-9aff-412e-85ac-6a63116dae63' CREATE (source121)-[r121:CREATES]->(target121)
+WITH source121, COUNT(r121) AS cnt
+MATCH (source122:Comment), (target122:Post) WHERE source122.id = 'e85ed6ff-e8b2-430d-9b99-d916b69dcba6' AND target122.id = 'c120cb76-cf6e-4b5b-8226-50fafd1cd5c7' CREATE (source122)-[r122:BELONGS_TO]->(target122)
+WITH source122, COUNT(r122) AS cnt
+MATCH (source123:User), (target123:Comment) WHERE source123.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target123.id = 'e85ed6ff-e8b2-430d-9b99-d916b69dcba6' CREATE (source123)-[r123:CREATES]->(target123)
+WITH source123, COUNT(r123) AS cnt
+MATCH (source124:Comment), (target124:Comment) WHERE source124.id = 'ecf70ed9-07ad-4bb0-8b4a-8c47a2f2f4e9' AND target124.id = 'dc4e900b-5430-4bec-bee2-c9bcc912020b' CREATE (source124)-[r124:BELONGS_TO]->(target124)
+WITH source124, COUNT(r124) AS cnt
+MATCH (source125:User), (target125:Comment) WHERE source125.id = '701dc145-d360-4773-8df5-defff770284a' AND target125.id = 'ecf70ed9-07ad-4bb0-8b4a-8c47a2f2f4e9' CREATE (source125)-[r125:CREATES]->(target125)
+WITH source125, COUNT(r125) AS cnt
+MATCH (source126:Comment), (target126:Post) WHERE source126.id = '06784ad9-9f1d-4955-ae03-5bbdbd4d7107' AND target126.id = 'f378d479-9841-4a50-aedd-8126bcb1caf9' CREATE (source126)-[r126:BELONGS_TO]->(target126)
+WITH source126, COUNT(r126) AS cnt
+MATCH (source127:User), (target127:Comment) WHERE source127.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target127.id = '06784ad9-9f1d-4955-ae03-5bbdbd4d7107' CREATE (source127)-[r127:CREATES]->(target127)
+WITH source127, COUNT(r127) AS cnt
+MATCH (source128:Comment), (target128:Comment) WHERE source128.id = '21b196e3-e6ad-4481-9d51-ab08e4b4d58c' AND target128.id = '46a65325-def4-4720-aea2-0c3570cc6158' CREATE (source128)-[r128:BELONGS_TO]->(target128)
+WITH source128, COUNT(r128) AS cnt
+MATCH (source129:User), (target129:Comment) WHERE source129.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target129.id = '21b196e3-e6ad-4481-9d51-ab08e4b4d58c' CREATE (source129)-[r129:CREATES]->(target129)
+WITH source129, COUNT(r129) AS cnt
+MATCH (source130:Comment), (target130:Post) WHERE source130.id = '34897c04-dbcf-4e47-9190-26ea3ce600a5' AND target130.id = '857e6bd7-4e74-4773-ad42-eee83bc8acc9' CREATE (source130)-[r130:BELONGS_TO]->(target130)
+WITH source130, COUNT(r130) AS cnt
+MATCH (source131:User), (target131:Comment) WHERE source131.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target131.id = '34897c04-dbcf-4e47-9190-26ea3ce600a5' CREATE (source131)-[r131:CREATES]->(target131)
+WITH source131, COUNT(r131) AS cnt
+MATCH (source132:Comment), (target132:Comment) WHERE source132.id = 'ba02a373-b7d7-4aa6-b939-63b95c2b8447' AND target132.id = '1a82f781-f60f-4411-80c4-0c39a9d77634' CREATE (source132)-[r132:BELONGS_TO]->(target132)
+WITH source132, COUNT(r132) AS cnt
+MATCH (source133:User), (target133:Comment) WHERE source133.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target133.id = 'ba02a373-b7d7-4aa6-b939-63b95c2b8447' CREATE (source133)-[r133:CREATES]->(target133)
+WITH source133, COUNT(r133) AS cnt
+MATCH (source134:Comment), (target134:Post) WHERE source134.id = '1f23137d-7906-4e2b-be0d-ee868d9843bd' AND target134.id = '1e1b392f-b2ea-4bd1-8e98-e246157da9bd' CREATE (source134)-[r134:BELONGS_TO]->(target134)
+WITH source134, COUNT(r134) AS cnt
+MATCH (source135:User), (target135:Comment) WHERE source135.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target135.id = '1f23137d-7906-4e2b-be0d-ee868d9843bd' CREATE (source135)-[r135:CREATES]->(target135)
+WITH source135, COUNT(r135) AS cnt
+MATCH (source136:Comment), (target136:Comment) WHERE source136.id = 'd107765e-1349-48ef-a1fe-1650a4193544' AND target136.id = '0ce117e8-8f7c-4d8d-b2db-5eab2ee8c91c' CREATE (source136)-[r136:BELONGS_TO]->(target136)
+WITH source136, COUNT(r136) AS cnt
+MATCH (source137:User), (target137:Comment) WHERE source137.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target137.id = 'd107765e-1349-48ef-a1fe-1650a4193544' CREATE (source137)-[r137:CREATES]->(target137)
+WITH source137, COUNT(r137) AS cnt
+MATCH (source138:Comment), (target138:Post) WHERE source138.id = '0843cc6e-96a4-430b-a891-e96e0a775623' AND target138.id = '857e6bd7-4e74-4773-ad42-eee83bc8acc9' CREATE (source138)-[r138:BELONGS_TO]->(target138)
+WITH source138, COUNT(r138) AS cnt
+MATCH (source139:User), (target139:Comment) WHERE source139.id = '701dc145-d360-4773-8df5-defff770284a' AND target139.id = '0843cc6e-96a4-430b-a891-e96e0a775623' CREATE (source139)-[r139:CREATES]->(target139)
+WITH source139, COUNT(r139) AS cnt
+MATCH (source140:Comment), (target140:Comment) WHERE source140.id = '0e5687b6-83e6-4019-b6f0-34042645627e' AND target140.id = '07f15957-e224-4ea2-865f-2f97a199da06' CREATE (source140)-[r140:BELONGS_TO]->(target140)
+WITH source140, COUNT(r140) AS cnt
+MATCH (source141:User), (target141:Comment) WHERE source141.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target141.id = '0e5687b6-83e6-4019-b6f0-34042645627e' CREATE (source141)-[r141:CREATES]->(target141)
+WITH source141, COUNT(r141) AS cnt
+MATCH (source142:Comment), (target142:Post) WHERE source142.id = 'cf2f2e6b-a65a-4df8-850b-2cabdf684004' AND target142.id = '3e1ec0e7-3027-48c7-9b18-d26530b3550b' CREATE (source142)-[r142:BELONGS_TO]->(target142)
+WITH source142, COUNT(r142) AS cnt
+MATCH (source143:User), (target143:Comment) WHERE source143.id = '701dc145-d360-4773-8df5-defff770284a' AND target143.id = 'cf2f2e6b-a65a-4df8-850b-2cabdf684004' CREATE (source143)-[r143:CREATES]->(target143)
+WITH source143, COUNT(r143) AS cnt
+MATCH (source144:Comment), (target144:Comment) WHERE source144.id = '0ef3f8cb-106f-48c9-a5e8-28772426cbab' AND target144.id = '6614b39c-e48e-4c21-bb91-5afa35460dec' CREATE (source144)-[r144:BELONGS_TO]->(target144)
+WITH source144, COUNT(r144) AS cnt
+MATCH (source145:User), (target145:Comment) WHERE source145.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target145.id = '0ef3f8cb-106f-48c9-a5e8-28772426cbab' CREATE (source145)-[r145:CREATES]->(target145)
+WITH source145, COUNT(r145) AS cnt
+MATCH (source146:Comment), (target146:Post) WHERE source146.id = 'b5465662-a8a6-43e6-a30b-896cfed96555' AND target146.id = '3e4bd6ca-3782-49ca-8c1c-eff9f2cd08b4' CREATE (source146)-[r146:BELONGS_TO]->(target146)
+WITH source146, COUNT(r146) AS cnt
+MATCH (source147:User), (target147:Comment) WHERE source147.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target147.id = 'b5465662-a8a6-43e6-a30b-896cfed96555' CREATE (source147)-[r147:CREATES]->(target147)
+WITH source147, COUNT(r147) AS cnt
+MATCH (source148:Comment), (target148:Comment) WHERE source148.id = '6614b39c-e48e-4c21-bb91-5afa35460dec' AND target148.id = '2264b426-146b-4db5-a95e-f296f9369c28' CREATE (source148)-[r148:BELONGS_TO]->(target148)
+WITH source148, COUNT(r148) AS cnt
+MATCH (source149:User), (target149:Comment) WHERE source149.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target149.id = '6614b39c-e48e-4c21-bb91-5afa35460dec' CREATE (source149)-[r149:CREATES]->(target149)
+WITH source149, COUNT(r149) AS cnt
+MATCH (source150:Comment), (target150:Post) WHERE source150.id = '6108d09d-521a-411f-aaed-7d1418c3ee9f' AND target150.id = '1e1b392f-b2ea-4bd1-8e98-e246157da9bd' CREATE (source150)-[r150:BELONGS_TO]->(target150)
+WITH source150, COUNT(r150) AS cnt
+MATCH (source151:User), (target151:Comment) WHERE source151.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target151.id = '6108d09d-521a-411f-aaed-7d1418c3ee9f' CREATE (source151)-[r151:CREATES]->(target151)
+WITH source151, COUNT(r151) AS cnt
+MATCH (source152:Comment), (target152:Comment) WHERE source152.id = 'cf3254a0-5395-420c-81ba-549f20073a35' AND target152.id = 'd107765e-1349-48ef-a1fe-1650a4193544' CREATE (source152)-[r152:BELONGS_TO]->(target152)
+WITH source152, COUNT(r152) AS cnt
+MATCH (source153:User), (target153:Comment) WHERE source153.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target153.id = 'cf3254a0-5395-420c-81ba-549f20073a35' CREATE (source153)-[r153:CREATES]->(target153)
+WITH source153, COUNT(r153) AS cnt
+MATCH (source154:Comment), (target154:Post) WHERE source154.id = '89790f96-a178-4422-8bb7-274fc8c0e08c' AND target154.id = '7cc0e750-13d7-4f6d-96d4-fe266a2cd6bd' CREATE (source154)-[r154:BELONGS_TO]->(target154)
+WITH source154, COUNT(r154) AS cnt
+MATCH (source155:User), (target155:Comment) WHERE source155.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target155.id = '89790f96-a178-4422-8bb7-274fc8c0e08c' CREATE (source155)-[r155:CREATES]->(target155)
+WITH source155, COUNT(r155) AS cnt
+MATCH (source156:Comment), (target156:Comment) WHERE source156.id = 'f30ce22f-876a-4675-80c5-9fea59e8a209' AND target156.id = '02ce3a96-39c9-4080-a0d1-7e30bea3ea4c' CREATE (source156)-[r156:BELONGS_TO]->(target156)
+WITH source156, COUNT(r156) AS cnt
+MATCH (source157:User), (target157:Comment) WHERE source157.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target157.id = 'f30ce22f-876a-4675-80c5-9fea59e8a209' CREATE (source157)-[r157:CREATES]->(target157)
+WITH source157, COUNT(r157) AS cnt
+MATCH (source158:Comment), (target158:Post) WHERE source158.id = '42152d34-5db0-4633-80ad-9d49b81d686b' AND target158.id = '99ecab8f-bcfc-4424-8228-5801ee8721c0' CREATE (source158)-[r158:BELONGS_TO]->(target158)
+WITH source158, COUNT(r158) AS cnt
+MATCH (source159:User), (target159:Comment) WHERE source159.id = '0fce52cd-03ef-48ce-ae99-9df7e2af5475' AND target159.id = '42152d34-5db0-4633-80ad-9d49b81d686b' CREATE (source159)-[r159:CREATES]->(target159)
+WITH source159, COUNT(r159) AS cnt
+MATCH (source160:Comment), (target160:Comment) WHERE source160.id = '2e047426-d128-4108-99c3-1e74b5da4ee2' AND target160.id = '106d6458-e2e2-4bd4-99fc-2bcd2ee5f411' CREATE (source160)-[r160:BELONGS_TO]->(target160)
+WITH source160, COUNT(r160) AS cnt
+MATCH (source161:User), (target161:Comment) WHERE source161.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target161.id = '2e047426-d128-4108-99c3-1e74b5da4ee2' CREATE (source161)-[r161:CREATES]->(target161)
+WITH source161, COUNT(r161) AS cnt
+MATCH (source162:Comment), (target162:Post) WHERE source162.id = 'f155e3cc-4d81-44ff-9a99-248ed0ef356e' AND target162.id = 'c120cb76-cf6e-4b5b-8226-50fafd1cd5c7' CREATE (source162)-[r162:BELONGS_TO]->(target162)
+WITH source162, COUNT(r162) AS cnt
+MATCH (source163:User), (target163:Comment) WHERE source163.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target163.id = 'f155e3cc-4d81-44ff-9a99-248ed0ef356e' CREATE (source163)-[r163:CREATES]->(target163)
+WITH source163, COUNT(r163) AS cnt
+MATCH (source164:Comment), (target164:Comment) WHERE source164.id = '5fcf23f1-f6b4-4d07-bac5-176d87dedc06' AND target164.id = 'daf78050-b50d-47ef-992d-ead300a6969c' CREATE (source164)-[r164:BELONGS_TO]->(target164)
+WITH source164, COUNT(r164) AS cnt
+MATCH (source165:User), (target165:Comment) WHERE source165.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target165.id = '5fcf23f1-f6b4-4d07-bac5-176d87dedc06' CREATE (source165)-[r165:CREATES]->(target165)
+WITH source165, COUNT(r165) AS cnt
+MATCH (source166:Comment), (target166:Post) WHERE source166.id = 'f7495568-bbc7-4f00-92a0-7e8158171cde' AND target166.id = '1e1b392f-b2ea-4bd1-8e98-e246157da9bd' CREATE (source166)-[r166:BELONGS_TO]->(target166)
+WITH source166, COUNT(r166) AS cnt
+MATCH (source167:User), (target167:Comment) WHERE source167.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target167.id = 'f7495568-bbc7-4f00-92a0-7e8158171cde' CREATE (source167)-[r167:CREATES]->(target167)
+WITH source167, COUNT(r167) AS cnt
+MATCH (source168:Comment), (target168:Comment) WHERE source168.id = 'a3aa949b-f10a-42a8-b1a5-10a00fd3bb21' AND target168.id = '8b36df9b-67ff-4d1b-92a6-37b34a813782' CREATE (source168)-[r168:BELONGS_TO]->(target168)
+WITH source168, COUNT(r168) AS cnt
+MATCH (source169:User), (target169:Comment) WHERE source169.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target169.id = 'a3aa949b-f10a-42a8-b1a5-10a00fd3bb21' CREATE (source169)-[r169:CREATES]->(target169)
+WITH source169, COUNT(r169) AS cnt
+MATCH (source170:Comment), (target170:Post) WHERE source170.id = '62efae73-f39e-4675-b869-16dadbf17528' AND target170.id = '1e1b392f-b2ea-4bd1-8e98-e246157da9bd' CREATE (source170)-[r170:BELONGS_TO]->(target170)
+WITH source170, COUNT(r170) AS cnt
+MATCH (source171:User), (target171:Comment) WHERE source171.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target171.id = '62efae73-f39e-4675-b869-16dadbf17528' CREATE (source171)-[r171:CREATES]->(target171)
+WITH source171, COUNT(r171) AS cnt
+MATCH (source172:Comment), (target172:Comment) WHERE source172.id = 'b2425618-a029-417f-8861-17c43afb7e6a' AND target172.id = '65a4fb3f-787a-4a51-b874-1fa94389dd5e' CREATE (source172)-[r172:BELONGS_TO]->(target172)
+WITH source172, COUNT(r172) AS cnt
+MATCH (source173:User), (target173:Comment) WHERE source173.id = '701dc145-d360-4773-8df5-defff770284a' AND target173.id = 'b2425618-a029-417f-8861-17c43afb7e6a' CREATE (source173)-[r173:CREATES]->(target173)
+WITH source173, COUNT(r173) AS cnt
+MATCH (source174:Comment), (target174:Post) WHERE source174.id = 'b39104a8-1cfd-4b0f-a696-401685ccccc6' AND target174.id = '95d14849-c450-4d97-9741-d7f6d0807216' CREATE (source174)-[r174:BELONGS_TO]->(target174)
+WITH source174, COUNT(r174) AS cnt
+MATCH (source175:User), (target175:Comment) WHERE source175.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target175.id = 'b39104a8-1cfd-4b0f-a696-401685ccccc6' CREATE (source175)-[r175:CREATES]->(target175)
+WITH source175, COUNT(r175) AS cnt
+MATCH (source176:Comment), (target176:Comment) WHERE source176.id = '70292464-4c83-4da5-92f7-742731bb292e' AND target176.id = 'ec737616-990a-42c0-be52-e7a6c17e5453' CREATE (source176)-[r176:BELONGS_TO]->(target176)
+WITH source176, COUNT(r176) AS cnt
+MATCH (source177:User), (target177:Comment) WHERE source177.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target177.id = '70292464-4c83-4da5-92f7-742731bb292e' CREATE (source177)-[r177:CREATES]->(target177)
+WITH source177, COUNT(r177) AS cnt
+MATCH (source178:Comment), (target178:Post) WHERE source178.id = '2264b426-146b-4db5-a95e-f296f9369c28' AND target178.id = '7ea65d16-3b25-45ae-9678-7f30d0bee7df' CREATE (source178)-[r178:BELONGS_TO]->(target178)
+WITH source178, COUNT(r178) AS cnt
+MATCH (source179:User), (target179:Comment) WHERE source179.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target179.id = '2264b426-146b-4db5-a95e-f296f9369c28' CREATE (source179)-[r179:CREATES]->(target179)
+WITH source179, COUNT(r179) AS cnt
+MATCH (source180:Comment), (target180:Comment) WHERE source180.id = '06b30235-d3a7-49ac-bf4d-a323779c0d7b' AND target180.id = '8a29bdf9-f8b9-4dfc-b9cc-3f90f75d2082' CREATE (source180)-[r180:BELONGS_TO]->(target180)
+WITH source180, COUNT(r180) AS cnt
+MATCH (source181:User), (target181:Comment) WHERE source181.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target181.id = '06b30235-d3a7-49ac-bf4d-a323779c0d7b' CREATE (source181)-[r181:CREATES]->(target181)
+WITH source181, COUNT(r181) AS cnt
+MATCH (source182:Comment), (target182:Post) WHERE source182.id = '8b26d535-84ff-4ec5-89b9-9c62e9a2edf7' AND target182.id = '3e4bd6ca-3782-49ca-8c1c-eff9f2cd08b4' CREATE (source182)-[r182:BELONGS_TO]->(target182)
+WITH source182, COUNT(r182) AS cnt
+MATCH (source183:User), (target183:Comment) WHERE source183.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target183.id = '8b26d535-84ff-4ec5-89b9-9c62e9a2edf7' CREATE (source183)-[r183:CREATES]->(target183)
+WITH source183, COUNT(r183) AS cnt
+MATCH (source184:Comment), (target184:Comment) WHERE source184.id = '47f9c2a9-36f2-475b-8df2-2ba67500c59e' AND target184.id = 'ba02a373-b7d7-4aa6-b939-63b95c2b8447' CREATE (source184)-[r184:BELONGS_TO]->(target184)
+WITH source184, COUNT(r184) AS cnt
+MATCH (source185:User), (target185:Comment) WHERE source185.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target185.id = '47f9c2a9-36f2-475b-8df2-2ba67500c59e' CREATE (source185)-[r185:CREATES]->(target185)
+WITH source185, COUNT(r185) AS cnt
+MATCH (source186:Comment), (target186:Post) WHERE source186.id = 'daf78050-b50d-47ef-992d-ead300a6969c' AND target186.id = '2270e98d-6bf3-45a6-a325-49db3679715a' CREATE (source186)-[r186:BELONGS_TO]->(target186)
+WITH source186, COUNT(r186) AS cnt
+MATCH (source187:User), (target187:Comment) WHERE source187.id = '701dc145-d360-4773-8df5-defff770284a' AND target187.id = 'daf78050-b50d-47ef-992d-ead300a6969c' CREATE (source187)-[r187:CREATES]->(target187)
+WITH source187, COUNT(r187) AS cnt
+MATCH (source188:Comment), (target188:Comment) WHERE source188.id = '2a4c6f6c-52e9-40bb-a241-43f575f66c3a' AND target188.id = '2738b71e-96fc-494b-8bf7-c274db382d3b' CREATE (source188)-[r188:BELONGS_TO]->(target188)
+WITH source188, COUNT(r188) AS cnt
+MATCH (source189:User), (target189:Comment) WHERE source189.id = 'f3696905-05f4-46a7-a541-160ab54b554a' AND target189.id = '2a4c6f6c-52e9-40bb-a241-43f575f66c3a' CREATE (source189)-[r189:CREATES]->(target189)
+WITH source189, COUNT(r189) AS cnt
+MATCH (source190:Comment), (target190:Post) WHERE source190.id = '35f8aadc-2bc8-42e0-a9a7-a908a6e863cb' AND target190.id = '3e1ec0e7-3027-48c7-9b18-d26530b3550b' CREATE (source190)-[r190:BELONGS_TO]->(target190)
+WITH source190, COUNT(r190) AS cnt
+MATCH (source191:User), (target191:Comment) WHERE source191.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target191.id = '35f8aadc-2bc8-42e0-a9a7-a908a6e863cb' CREATE (source191)-[r191:CREATES]->(target191)
+WITH source191, COUNT(r191) AS cnt
+MATCH (source192:Comment), (target192:Comment) WHERE source192.id = 'db2e82f2-177e-495d-aa89-983e2e8a4c6e' AND target192.id = '21b196e3-e6ad-4481-9d51-ab08e4b4d58c' CREATE (source192)-[r192:BELONGS_TO]->(target192)
+WITH source192, COUNT(r192) AS cnt
+MATCH (source193:User), (target193:Comment) WHERE source193.id = '701dc145-d360-4773-8df5-defff770284a' AND target193.id = 'db2e82f2-177e-495d-aa89-983e2e8a4c6e' CREATE (source193)-[r193:CREATES]->(target193)
+WITH source193, COUNT(r193) AS cnt
+MATCH (source194:Comment), (target194:Post) WHERE source194.id = 'fa2e8146-2fc9-4c6e-b954-7e566e145887' AND target194.id = '1fb78f28-b885-43f8-a600-ac499dde67cd' CREATE (source194)-[r194:BELONGS_TO]->(target194)
+WITH source194, COUNT(r194) AS cnt
+MATCH (source195:User), (target195:Comment) WHERE source195.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target195.id = 'fa2e8146-2fc9-4c6e-b954-7e566e145887' CREATE (source195)-[r195:CREATES]->(target195)
+WITH source195, COUNT(r195) AS cnt
+MATCH (source196:Comment), (target196:Comment) WHERE source196.id = 'c819427f-5ce4-4691-8c3e-5bed4976cc20' AND target196.id = '0ce117e8-8f7c-4d8d-b2db-5eab2ee8c91c' CREATE (source196)-[r196:BELONGS_TO]->(target196)
+WITH source196, COUNT(r196) AS cnt
+MATCH (source197:User), (target197:Comment) WHERE source197.id = '701dc145-d360-4773-8df5-defff770284a' AND target197.id = 'c819427f-5ce4-4691-8c3e-5bed4976cc20' CREATE (source197)-[r197:CREATES]->(target197)
+WITH source197, COUNT(r197) AS cnt
+MATCH (source198:Comment), (target198:Post) WHERE source198.id = '0ce117e8-8f7c-4d8d-b2db-5eab2ee8c91c' AND target198.id = '857e6bd7-4e74-4773-ad42-eee83bc8acc9' CREATE (source198)-[r198:BELONGS_TO]->(target198)
+WITH source198, COUNT(r198) AS cnt
+MATCH (source199:User), (target199:Comment) WHERE source199.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target199.id = '0ce117e8-8f7c-4d8d-b2db-5eab2ee8c91c' CREATE (source199)-[r199:CREATES]->(target199)
+WITH source199, COUNT(r199) AS cnt
+MATCH (source200:Comment), (target200:Comment) WHERE source200.id = '4f1787c1-f4c0-440b-9cb2-230d3b9c35ae' AND target200.id = '193d8ba3-bc34-4f65-a801-1420fe48d25e' CREATE (source200)-[r200:BELONGS_TO]->(target200)
+WITH source200, COUNT(r200) AS cnt
+MATCH (source201:User), (target201:Comment) WHERE source201.id = '701dc145-d360-4773-8df5-defff770284a' AND target201.id = '4f1787c1-f4c0-440b-9cb2-230d3b9c35ae' CREATE (source201)-[r201:CREATES]->(target201)
+WITH source201, COUNT(r201) AS cnt
+MATCH (source202:Comment), (target202:Post) WHERE source202.id = '14defcc7-7718-422a-a7e1-05c7717fa476' AND target202.id = '95d14849-c450-4d97-9741-d7f6d0807216' CREATE (source202)-[r202:BELONGS_TO]->(target202)
+WITH source202, COUNT(r202) AS cnt
+MATCH (source203:User), (target203:Comment) WHERE source203.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target203.id = '14defcc7-7718-422a-a7e1-05c7717fa476' CREATE (source203)-[r203:CREATES]->(target203)
+WITH source203, COUNT(r203) AS cnt
+MATCH (source204:Comment), (target204:Comment) WHERE source204.id = '4db912bb-1bba-406d-a3e7-22a543f05a74' AND target204.id = '0d1044f6-5a4e-44a0-bbb9-1cd6ab335f4a' CREATE (source204)-[r204:BELONGS_TO]->(target204)
+WITH source204, COUNT(r204) AS cnt
+MATCH (source205:User), (target205:Comment) WHERE source205.id = '448dc49f-594d-4d78-becd-fe677ba803c1' AND target205.id = '4db912bb-1bba-406d-a3e7-22a543f05a74' CREATE (source205)-[r205:CREATES]->(target205)
+WITH source205, COUNT(r205) AS cnt
+MATCH (source206:Comment), (target206:Post) WHERE source206.id = '46a65325-def4-4720-aea2-0c3570cc6158' AND target206.id = '8519ad9c-766a-4a8a-94d2-6ff5c0a9eeee' CREATE (source206)-[r206:BELONGS_TO]->(target206)
+WITH source206, COUNT(r206) AS cnt
+MATCH (source207:User), (target207:Comment) WHERE source207.id = '701dc145-d360-4773-8df5-defff770284a' AND target207.id = '46a65325-def4-4720-aea2-0c3570cc6158' CREATE (source207)-[r207:CREATES]->(target207)
+WITH source207, COUNT(r207) AS cnt
+MATCH (source208:Comment), (target208:Comment) WHERE source208.id = '56781434-ddb7-4994-96c6-ea383b3d0dde' AND target208.id = '92ee641e-624b-4e78-b984-9b7f355ac2ea' CREATE (source208)-[r208:BELONGS_TO]->(target208)
+WITH source208, COUNT(r208) AS cnt
+MATCH (source209:User), (target209:Comment) WHERE source209.id = 'fb57b69c-167e-4d62-8a46-53df32ff8ccf' AND target209.id = '56781434-ddb7-4994-96c6-ea383b3d0dde' CREATE (source209)-[r209:CREATES]->(target209)
