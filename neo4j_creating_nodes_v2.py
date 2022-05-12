@@ -135,12 +135,15 @@ def createCommentRelations():
 
 def printNodes():
     for node in nodes:
-        print("CREATE (n:{}{})".format(node['type'], json.dumps(node['n'])))
+        print("CREATE (n:{type}{n})".format(type=node['type'], n='{' + (', '.join(list(map(lambda x: "{}: '{}'".format(x[0], x[1]), node['n'].items())))) + '}'))
 
 
 def printRelations():
     for relation in relations:
-        print("MATCH (source:{}), (target:{}) WHERE source.id = {} AND target.id = {} CREATE (source)-[{}]->(target)".format(relation['sourceType'], relation['targetType'], relation['sourceId'], relation['targetId'], relation['relationType']))
+        print(("MATCH (source:{sourceType}), (target:{targetType}) " +
+               "WHERE source.id = '{sourceId}' AND target.id = '{targetId}' " +
+               "CREATE (source)-[{relationType}]->(target)").format(
+            **relation))
 
 
 if __name__ == '__main__':
@@ -156,4 +159,3 @@ if __name__ == '__main__':
 
     printNodes()
     printRelations()
-
